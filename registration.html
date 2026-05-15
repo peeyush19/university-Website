@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Itvedant</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registration.html">Student Registration</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="courses.html">Courses</a></li>
+      </ul>
+    </nav>
+
+    <div class="form-container">
+      <form action="">
+    <table>
+      <caption><h2>Registration Form</h2></caption>
+      <tr>
+        <td>Full name</td>
+        <td><input type="text" placeholder="Enter Name" name="fullname"></td>
+      </tr>
+      <tr>
+        <td>DOB</td>
+        <td><input type="date" placeholder="Enter age" max="2026-05-06" min="1940-01-01" name="dob"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email"></td>
+      </tr> 
+      <tr>
+        <td>Mobile</td>
+        <td><input type="number" name="mobile"></td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td><input type="number" min="1" max="150" name="weight"></td>
+      </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td><input type="radio" name="Gender" value="male">Male
+            <input type="radio" name="Gender" value="female">Female
+            <input type="radio" name="Gender" value="others">Others
+          </td>
+        </tr>
+        <tr>
+          <td>Courses</td>
+          <td>
+            <input type="checkbox" name="courses" value="java">Java Fullstack
+            <input type="checkbox" name="courses" value="python">Data Science
+            <input type="checkbox" name="courses" value="cpp">Digital Marketing
+           
+          </td>
+        </tr>
+
+        <tr>
+          <td>Location</td>
+          <td>
+            <select name="location" id="">
+              <option value="">Select Location</option>
+              <option value="mum">Mumbai</option>
+              <option value="pune">Pune</option>
+              <option value="del">Delhi</option>
+              <option value="banglore">Bangalore</option>
+              <option value="kol">kolkata</option>
+            </select>
+          </td>
+        </tr>
+
+      <tr>
+        <td>Password</td>
+        <td><input type="password" name="pass"></td>
+      </tr>
+      <tr>
+         <td>Confirm Password</td>
+        <td><input type="password" name="cpass"></td>
+      </tr>
+
+      <tr>
+        <td>Address</td>
+        <td><textarea name="address" id=""></textarea></td>
+      </tr>
+
+      
+      <tr>
+        <th colspan="2"><input type="submit" value="Register"></th>
+      </tr>
+      
+    </table>
+    </form>
+    </div>
+  </body>
+</html>
